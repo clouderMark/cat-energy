@@ -1,0 +1,132 @@
+.cat {
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 22.5px;
+        top: 25.5px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: @bestChoiseBg;
+
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        background-size: 100%;
+    }
+    
+    &--sits {
+        
+        &::after {
+            top: 23px;
+            left: 30.5px;
+            width: 35px;
+            height: 49px;
+            background-image: -webkit-image-set(
+                    url('/img/cat-sits-mobile@2x.png') 2x,
+                    url('/img/cat-sits-mobile@1x.png') 1x);
+        }
+    }
+
+    &--walks {
+
+        &::after {
+            top: 36px;
+            left: 13px;
+            width: 67px;
+            height: 28px;
+            background-image: -webkit-image-set(
+                    url('/img/cat-walks-mobile@2x.png') 2x,
+                    url('/img/cat-walks-mobile@1x.png') 1x);
+        }
+    }
+}
+
+@media (min-width: @tablet) {
+
+    .cat {
+
+        &::before {
+            left: auto;
+            right: 62px;
+            top: 90px;
+
+            width: 200px;
+            height: 200px;
+        }
+
+        &--sits {
+        
+            &::after {
+                top: 79px;
+                left: auto;
+                right: 93px;
+                width: 140px;
+                height: 194px;
+                background-image: -webkit-image-set(
+                        url('/img/cat-sits-tablet@2x.png') 2x,
+                        url('/img/cat-sits-tablet@1x.png') 1x);
+            }
+        }
+
+        &--walks {
+
+            &::after {
+                top: 132px;
+                left: auto;
+                right: 29px;
+                width: 268px;
+                height: 112px;
+                background-image: -webkit-image-set(
+                        url('/img/cat-walks-tablet@2x.png') 2x,
+                        url('/img/cat-walks-tablet@1x.png') 1x);
+            }
+        }
+    }
+}
+
+@media (min-width: @desctop) {
+
+    .cat {
+
+        &::before {
+            right: auto;
+            left: 53px;
+            top: 47px;
+
+            width: 100px;
+            height: 100px;
+        }
+
+        &--sits {
+        
+            &::after {
+                top: 40px;
+                right: auto;
+                left: 67px;
+                width: 70px;
+                height: 97px;
+                background-image: -webkit-image-set(
+                        url('/img/cat-sits-desctop@2x.png') 2x,
+                        url('/img/cat-sits-desctop@1x.png') 1x);
+            }
+        }
+
+        &--walks {
+
+            &::after {
+                top: 69px;
+                right: auto;
+                left: 35px;
+                width: 134px;
+                height: 56px;
+                background-image: -webkit-image-set(
+                        url('/img/cat-walks-desctop@2x.png') 2x,
+                        url('/img/cat-walks-desctop@1x.png') 1x);
+            }
+        }
+    }
+}

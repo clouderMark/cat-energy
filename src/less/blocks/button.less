@@ -1,0 +1,22 @@
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none; 
+  background-color: inherit;
+  cursor: pointer;
+  background-color: @bestChoiseBg;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  
+  &:hover { 
+    color: @white;
+    background-color: @btnHover;
+  }
+
+  &:active { 
+    color: rgba(255, 255, 255, 0.6);
+    background-color: @btnHover;
+  }
+}

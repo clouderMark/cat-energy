@@ -1,0 +1,42 @@
+
+.control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 196px;
+    margin: 0 auto;
+
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    & label {
+        display: flex;
+    }
+}
+
+@media(min-width: @tablet) {
+
+    .control {
+        position: absolute;
+        left: 50%;
+        margin-left: -286px;
+        width: 571px;
+
+        font-size: 20px;
+        line-height: 32px;
+
+        &__span {
+            border-bottom: 1px dotted @dots;
+        }
+    }
+}
+
+@media(min-width: @desctop) {
+
+    .control {
+        left: auto;
+        right: 15px;
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,113 @@
+.content {
+    margin-right: @mobilIndent;
+    margin-left: @mobilIndent;
+    margin-bottom: 33px;
+
+    &__title {
+        font-size: 36px;
+        font-weight: 400;
+        margin-bottom: 44px;
+    }
+
+    &__text {
+        width: 95%;
+        margin-bottom: 25px;
+
+        font-family: @aria;
+        color: @exampleText;
+        font-weight: 400;
+    }
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 35px;
+    }
+
+    &__bold {
+        display: block;
+        width: 188px;
+        margin: 0 auto;
+
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+}
+
+@media(min-width: @tablet) {
+    .content {
+        margin-right: @tabletIndent;
+        margin-left: @tabletIndent;
+        margin-bottom: 51px;
+        padding-top: 15px;
+
+        &__title {
+            margin: 0;
+            margin-bottom: 64px;
+
+            font-size: 60px;
+            line-height: 60px;
+        }
+
+        &__text {
+            width: 95.4%;
+            margin-bottom: 53px;
+
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        &__block {
+            width: 365px;
+        }
+
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__bold {
+            margin: 0;
+            margin-top: 7px;
+            margin-right: 2px;
+
+            font-size: 20px;
+            line-height: 29px;
+            text-align: right;
+        }
+    }
+}
+
+@media(min-width: @desctop) {
+
+    .content {
+        position: relative;
+        margin-right: 0;
+        margin-left: @desctopIndent;
+        width: 37.7%;
+
+        &__title {
+            margin-top: 55px;
+            margin-bottom: 145px;
+        }
+
+        &__text {
+            width: 79%;
+            margin-bottom: 69px;
+        }
+
+        &__wrapper {
+            flex-direction: column;
+        }
+
+        &__block {
+            margin-bottom: 48px;
+        }
+
+        &__bold {
+            display: flex;
+            justify-content: space-between;
+            width: 60.5%;
+        }
+    }
+}

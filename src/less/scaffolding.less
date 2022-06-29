@@ -1,0 +1,23 @@
+body {
+    font-family: 'Oswald', 'Arial', sans-serif;
+    color: @black;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    
+    width: 100%;
+    min-width: @mobile;
+    // width: @mobile;
+}
+
+@media (min-width: @tablet) {
+    body {
+       min-width: @tablet;
+    }
+} 
+
+@media (min-width: @desctop) {
+    body {
+        min-width: @desctop;
+    }
+}

@@ -1,0 +1,56 @@
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    &:hover {
+        .copyright__title {
+            color: @gray;
+        }
+
+        svg {
+            fill: @bestChoiseBg;
+            stroke: @bestChoiseBg;
+        }
+    }
+
+    &:active {
+        .copyright__title {
+            color: rgba(68, 68, 68, 0.302);
+        }
+
+        svg {
+            fill: @socialAct;
+            stroke: @socialAct;
+        }
+    }
+
+    &__title {
+        margin-top: 7px;
+
+        font-size: 16px;
+        color: rgba(68, 68, 68, 0.7);
+        font-weight: 400;
+        font-family: @aria;
+    }
+
+    & svg {
+        fill: rgba(68, 68, 68, 0.5);
+        stroke: rgba(68, 68, 68, 0.5);
+
+
+    }
+}
+
+@media(min-width: @tablet) {
+    .copyright {
+        width: 165px;
+        margin-top: -29px;
+        margin-right: -1px;
+
+        &__title {
+            margin-top: 8px;
+        }
+
+    }
+}

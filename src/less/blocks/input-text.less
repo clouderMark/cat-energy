@@ -1,0 +1,55 @@
+.input-text {
+
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: @product;
+
+    & input {
+        flex-grow: 1;
+        height: 45px;
+        margin-left: 5.5%;
+        padding-left: 5.5%;
+
+        border: 1px solid @mainNavLine;
+
+        text-transform: uppercase;
+        color: @gray;
+
+        &:hover {
+            border-color: @inputTextHover;
+        }
+
+        &:focus {
+            outline: none;
+            border-color: @gray;
+        }
+    }
+
+    & label {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        margin-bottom: 14px;
+    }
+}
+
+@media(min-width: @tablet) {
+    .input-text {
+
+        font-size: 20px;
+        line-height: 20px;
+
+        & input {
+            height: 52px;
+            margin-left: 2.9%;
+            padding-left: 3.1%;
+        }
+
+        &__item {
+            margin-bottom: 20px;
+        }
+    }
+}
