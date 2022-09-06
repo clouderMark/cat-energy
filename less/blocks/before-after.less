@@ -1,0 +1,84 @@
+.before-after {
+    position: relative;
+    width: 311px;
+    margin: 0 auto;
+    margin-bottom: 31px;
+
+    & img {
+        max-width: none;
+    }
+
+    &__picture {
+
+        &--before {
+            position: absolute;
+            top: 10px;
+            overflow: hidden;
+            width: 55%;
+            margin: 0;
+            background-color: @number;
+            box-shadow: 0 -20px 0 0 @number;
+        }
+
+        &--after {
+            margin-left: 50px;
+        }
+    }
+}
+
+@media(min-width: @tablet) {
+    .before-after {
+        width: 708px;
+        height: 449px;
+        margin: 0 auto;
+        padding-left: 56px;
+        margin-bottom: 82px;
+
+        &__picture {
+
+            &--before {
+                top: 18px;
+                left: 15px;
+                width: 49.9%;
+                background-image: linear-gradient(white 151px, @cardGay 151px);
+                box-shadow: 0 -50px 0 0 @white,
+                    0 112px 0 0 @cardGay;
+            }
+        }
+
+        &__bg {
+            height: 463px;
+            background-image: linear-gradient(to right, @cardGay 28%, @after 28%);
+            margin-top: -362px;
+        }
+    }
+}
+
+@media(min-width: @desctop) {
+
+    .before-after {
+        padding-left: 68px;
+        width: 677px;
+        margin-bottom: 100px;
+
+        &__picture {
+
+            &--before {
+                top: 18px;
+                left: 27px;
+                width: 54%;
+
+                background-image: linear-gradient(white 173px, @cardGay 173px);
+                box-shadow: 0 -30px 0 0 @white,
+                0 133px 0 0 @cardGay;
+            }
+        }
+
+        &__bg {
+            width: 100%;
+            margin-top: -442px;
+            height: 462px;
+            background-image: linear-gradient(to right, @cardGay 56.2%, @after 56.2%);
+        }
+    }
+}

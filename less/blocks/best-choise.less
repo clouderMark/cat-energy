@@ -1,0 +1,151 @@
+.best-choise {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 21px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        height: 306px;
+        width: 100%;
+        padding-top: 27px;
+        background-image: url('/img/index-background-mobile@1x.jpg'),
+                          linear-gradient(to right, #65a93c, #63a73a);
+        background-position: center 0;
+        background-repeat: no-repeat;
+    }
+
+    &__product {
+        width: 81.25%;
+        margin-bottom: 9px;
+
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 36px;
+        color: @white;
+        text-align: center;
+    }
+
+    &__slogan {
+        margin-bottom: 27px;
+
+        text-transform: uppercase;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    &__picture {
+        margin: 0;
+        width: 280px;
+        height: 270px;
+        height: auto;
+        margin-top: -138px;
+        margin-bottom: 2px;
+
+        font-size: 20px;
+        color: @bestChoiseBg;
+
+    }
+
+    &__button {
+        width: 87.4%;
+        height: 40px;
+    }
+}
+
+@media (min-width: @tablet) {
+
+    .best-choise {
+        align-items: flex-start;
+        position: relative;
+        width: @tablet;
+        margin: 0 auto;
+
+        &__content {
+            align-items: flex-start;
+            height: auto;
+            padding-top: 38px;
+
+            background-image: none !important;
+            background-color: transparent;
+
+        }
+
+        &__product {
+            width: 420px;
+            margin-left: 15.2%;
+            margin-bottom: 22px;
+
+            color: @black;
+            font-size: 60px;
+            line-height: 60px;
+            text-align: start;
+        }
+
+        &__slogan {
+            margin-left: 15.3%;
+            margin-bottom: 21px;
+
+            font-size: 20px;
+            color: rgba(0, 0, 0, 0.7);
+        }
+
+        &__picture {
+            width: 709px;
+            height: 609px;
+            margin-left: 3.8%;
+            margin-top: 0;
+            color: @black;
+        }
+
+        &__button {
+            position: absolute;
+            top: 266px;
+            width: 245px;
+            margin-left: 15.4%;
+            height: 52px;
+
+            font-size: 20px;
+        }
+    }
+}
+
+@media (min-width: @desctop) {
+    .best-choise {
+        flex-direction: row;
+        width: auto;
+        margin-left: @desctopIndent;
+        margin-right: @desctopIndent;
+        margin-top: -550px;
+        margin-bottom: 72px;
+
+        &__content {
+            width: 41.5%;
+            padding-top: 76px;
+            padding-left: 6.6%;
+        }
+
+        &__product {
+            margin-left: 0;
+        }
+
+        &__slogan {
+            margin-left: 0;
+        }
+
+        &__picture {
+            width: 552px;
+            height: 560px;
+            margin-left: -4.6%;
+            margin-top: -4px;
+        }
+
+        &__button {
+            top: 310px;
+            left: -8.9%;
+        }
+    }
+}

@@ -1,0 +1,92 @@
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    padding-left: @mobilIndent;
+    padding-right: @mobilIndent;
+    padding-top: 28px;
+    padding-bottom: 25px;
+
+    &--catalog {
+        background-color: @cardGay;
+    }
+
+    &__bold {
+        width: 128px;
+        margin-left: -2px;
+
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+
+    &__address {
+        width: 142px;
+        margin: 0;
+        margin-top: 1px;
+
+        line-height: 20px;
+        font-family: @aria;
+        color: rgba(68,68,68, 0.7);
+    }
+}
+
+@media(min-width: @tablet) {
+
+    .contacts {
+        padding-left: @tabletIndent;
+        padding-right: @tabletIndent;
+        padding-top: 65px;
+        padding-left: 5.4%;
+        padding-right: 5.5%;
+        padding-bottom: 60px;
+
+        &--catalog {
+            padding-left: 10%;
+            padding-right: 9%;
+        }
+
+        &__bold {
+            width: 188px;
+
+            font-size: 20px;
+            line-height: 25px;
+        }
+
+        &__address {
+            width: 188px;
+            margin-top: -3px;
+
+            font-size: 16px;
+            line-height: 20px;
+            text-align: right;
+
+            &--city {
+                display: block;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media(min-width: @desctop) {
+
+    .contacts {
+        position: relative;
+        width: 570px;
+        height: 201px;
+        margin-top: 95px;
+        margin-left: 110px;
+        
+        background-color: @white;
+
+        &--catalog {
+            padding-left: 5.4%;
+            padding-right: 5.5%;
+        }
+
+        &__address {
+        text-align: left;
+        }
+    }
+}

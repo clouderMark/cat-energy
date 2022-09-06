@@ -1,0 +1,85 @@
+.social {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 21px;
+    margin-bottom: 21px;
+
+    border-bottom: 1px solid @cardLine;
+
+    font-size: 0;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 132px;
+        padding-bottom: 10px;
+    }
+
+    &__icon {
+
+        & svg {
+            fill: @exampleText;
+
+            &:hover {
+                fill: @bestChoiseBg;
+            }
+
+            &:active {
+                fill: @socialAct;
+            }
+        }
+
+        &--inst svg {
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    &--fb {
+
+        & svg {
+            width: 20px;
+            stroke-width: 10px;
+        }
+    }
+}
+
+@media(min-width: @tablet) {
+
+    .social {
+        width: 140px;
+        padding-top: 10px;
+        border-bottom: none;
+
+        &__list {
+            width: 100%;
+        }
+
+        &__icon {
+
+            &--vk svg {
+                width: 40px;
+                height: 30px;
+            }
+
+            &--inst svg {
+                width: 23px;
+                height: 23px;
+            }
+
+            &--fb svg {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
+
+@media(min-width: @tablet) {
+
+    .social {
+        padding-top: 6px;
+    }
+}

@@ -1,0 +1,78 @@
+.block {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 44.3%;
+    height: 56px;
+    padding-top: 30px;
+
+
+    border-radius: 3px;
+    border: 1px solid rgba(68, 68, 68, 0.2);
+
+    &__text {
+        margin: 0;
+        margin-bottom: 9px;
+
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    &__title {
+        padding-right: 2px;
+        padding-left: 2px;
+        margin: 0 auto;
+        width: 86px;
+
+        background-color: @number;
+        font-family: @aria;
+
+        font-size: 12px;
+        line-height: 12px;
+        font-weight: 400;
+        color: @exampleText;
+        text-align: center;
+    }
+}
+
+@media(min-width: @tablet) {
+    .block {
+        width: 162px;
+        height: 72px;
+        padding-top: 25px;
+
+        &:first-child &__title {
+            width: 110px;
+        }
+
+        &__text {
+            margin-bottom: 16px;
+
+            font-size: 30px;
+            line-height: 30px;
+        }
+        
+        &__title {
+            width: 140px;
+
+            background-color: @white;
+
+            font-size: 14px;
+            line-height: 14px;
+        }
+
+
+    }
+}
+
+@media(min-width: @desctop) {
+
+    .block {
+
+        &__title {
+            background-color: @cardGay;
+        }
+    }
+}

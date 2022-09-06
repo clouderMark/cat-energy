@@ -1,0 +1,112 @@
+
+.card {
+    position: relative;
+    padding-top: 41px;
+    padding-right: 6.6%;
+    padding-bottom: 20px;
+    padding-left: 20px;
+
+    background-color: @cardGay;
+
+    color: @cardContent;
+
+    &__title {
+        
+        margin: 0;
+        margin-left: 29.5%;
+        margin-bottom: 38px;
+
+        font-size: 24px;
+        text-transform: uppercase;
+        font-weight: 400;
+        color: @black;
+    }
+
+    &__content {
+        padding-right: 5%;
+        padding-bottom: 21px;
+        margin-bottom: 18px;
+        border-bottom: 1.5px solid @cardLine;
+
+        font-family: @aria;
+        font-weight: 200;
+        word-spacing: 0.02em;
+        font-size: 13.5px;
+
+        &--last {
+            & br {
+                display: none;
+            }
+        }
+    }
+
+    &__link {
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+}
+
+@media (min-width: @tablet) {
+
+    .card {
+        padding-top: 85px;
+        padding-left: 52px;
+        padding-bottom: 61px;
+        min-height: 372px;
+
+        &__title {
+            margin-left: 0;
+            margin-bottom: 33px;
+
+            font-size: 36px;
+        }
+
+        &__content {
+            width: 67%;
+            margin-bottom: 36px;
+            border: none;
+
+            font-size: 16px;
+            line-height: 24px;
+
+            &--last {
+                width: 62%;
+                
+                & br {
+                    display: inline;
+                }
+            }
+        }
+
+        &__link {
+            font-size: 20px;
+            line-height: 20px;
+        }
+    }
+}
+
+@media (min-width: @desctop) {
+
+    .card {
+        width: 46.75%;
+        padding-top: 86px;
+        padding-right: 0;
+
+        &__title {
+            margin-left: 31.2%;
+            margin-bottom: 82px;
+        }
+
+        &__content {
+            width: 100%;
+            margin-bottom: 11px;
+
+            &--last {
+                
+                & br {
+                    display: none;
+                }
+            }
+        }
+    }
+}
